@@ -1,0 +1,2 @@
+#Joint Type Inference on Entities and Relations via Graph Convolutional Networks
+- 该篇论文主要做实体和关系的联合抽取，其动机如下：1、加强实体和关系之间模型的交互2、抽取更多更丰富的特征（实体-实体特征、实体-关系特征、关系-关系特征）而不是设计复杂的联合推理。其构建Entity-Relation Graph，将每一个实体和关系转为图中节点，将关系节点和相应的两个实体连边，构建了实体-关系图。在构建了实体-关系图的基础上，其框架主要流程如下：1、Entity span detection 2、Node Embedding Extractor 3、GCN based Entity type and Relation Type Inference。其最终在ACE05数据集上取得了state-of-the-art结果。
